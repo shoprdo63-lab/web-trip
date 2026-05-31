@@ -1,5 +1,5 @@
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, Star, Clock, Route, MapPin, Calendar, Car, Sparkles } from 'lucide-react';
+import { X, Star, Clock, Navigation, MapPin, Calendar, Car, Sparkles } from 'lucide-react';
 import Comments from './Comments';
 
 const typeLabels = {
@@ -67,7 +67,7 @@ export default function TrailDetail({ trail, onClose }) {
                 <div className="text-sm text-gray-500">משך</div>
               </div>
               <div className="bg-sand-50 rounded-xl p-4 text-center">
-                <Route className="w-5 h-5 mx-auto mb-1 text-primary-600" />
+                <Navigation className="w-5 h-5 mx-auto mb-1 text-primary-600" />
                 <div className="font-bold text-gray-800">{trail.distance}</div>
                 <div className="text-sm text-gray-500">מרחק</div>
               </div>

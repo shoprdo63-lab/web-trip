@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { MapPin, Route, Users, Star } from 'lucide-react';
+import { MapPin, Map, Users, Star } from 'lucide-react';
 
 export default function Hero() {
   const scrollTo = (id) => {
@@ -57,7 +57,7 @@ export default function Hero() {
           className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto"
         >
           {[
-            { id: 'routes', icon: Route, label: 'מסלולים', value: '200+' },
+            { id: 'routes', icon: Map, label: 'מסלולים', value: '200+' },
             { id: 'sites', icon: MapPin, label: 'אתרים', value: '150+' },
             { id: 'hikers', icon: Users, label: 'מטיילים', value: '50K+' },
             { id: 'rating', icon: Star, label: 'דירוג ממוצע', value: '4.8' },

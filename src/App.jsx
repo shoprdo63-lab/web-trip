@@ -1,12 +1,13 @@
-import { useState, useMemo } from 'react';
+import { useState, useMemo, lazy, Suspense } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import FilterBar from './components/FilterBar';
 import TrailList from './components/TrailList';
-import MapView from './components/MapView';
 import TrailDetail from './components/TrailDetail';
 import Footer from './components/Footer';
 import { trails } from './data/trails';
+
+const MapView = lazy(() => import('./components/MapView'));
 
 function App() {
   const [filters, setFilters] = useState({
@@ -53,11 +54,13 @@ function App() {
       </div>
 
       <TrailList trails={filteredTrails} onTrailClick={handleTrailClick} />
-      <MapView
-        trails={filteredTrails}
-        selectedTrail={selectedTrail}
-        onMarkerClick={handleTrailClick}
-      />
+      <Suspense fallback={<div className="py-20 text-center text-gray-400">טוען מפה...</div>}>
+        <MapView
+          trails={filteredTrails}
+          selectedTrail={selectedTrail}
+          onMarkerClick={handleTrailClick}
+        />
+      </Suspense>
 
       {selectedTrail && (
         <TrailDetail trail={selectedTrail} onClose={handleCloseDetail} />

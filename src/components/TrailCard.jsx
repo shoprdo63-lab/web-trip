@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Star, Clock, Route, MapPin } from 'lucide-react';
+import { Star, Clock, Navigation, MapPin } from 'lucide-react';
 
 const typeLabels = {
   water: { label: 'מים', className: 'tag-water' },
@@ -52,7 +52,7 @@ export default function TrailCard({ trail, onClick }) {
             <span>{trail.duration}</span>
           </div>
           <div className="flex items-center gap-1">
-            <Route className="w-4 h-4" />
+            <Navigation className="w-4 h-4" />
             <span>{trail.distance}</span>
           </div>
         </div>
