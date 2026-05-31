@@ -1,0 +1,38 @@
+export const pois = {
+  gasStations: [
+    { id: 1, name: "תחנת דלק פז - עין גדי", lat: 31.42, lng: 35.39, type: "gas" },
+    { id: 2, name: "דלקור - מצדה", lat: 31.30, lng: 35.36, type: "gas" },
+    { id: 3, name: "פז - אילת", lat: 29.55, lng: 34.95, type: "gas" },
+    { id: 4, name: "סונול - מירון", lat: 32.98, lng: 35.44, type: "gas" },
+    { id: 5, name: "דור אלון - רמון", lat: 30.61, lng: 34.80, type: "gas" },
+    { id: 6, name: "דלק - קצרין", lat: 32.99, lng: 35.69, type: "gas" },
+    { id: 7, name: "פז - חיפה", lat: 32.73, lng: 34.99, type: "gas" },
+    { id: 8, name: "סונול - תל אביב", lat: 32.12, lng: 34.79, type: "gas" },
+    { id: 9, name: "דלק - ירושלים", lat: 31.77, lng: 35.22, type: "gas" },
+    { id: 10, name: "פז - פלמחים", lat: 31.93, lng: 34.71, type: "gas" },
+  ],
+  restaurants: [
+    { id: 1, name: "מסעדת עין גדי", lat: 31.45, lng: 35.38, type: "restaurant", cuisine: "ים תיכוני" },
+    { id: 2, name: "קפה מצדה", lat: 31.315, lng: 35.353, type: "restaurant", cuisine: "קפה" },
+    { id: 3, name: "מסעדת אילת", lat: 29.55, lng: 34.95, type: "restaurant", cuisine: "דגים" },
+    { id: 4, name: "מסעדת מירון", lat: 32.99, lng: 35.41, type: "restaurant", cuisine: "ארמני" },
+    { id: 5, name: "קפה נטף", lat: 30.61, lng: 34.80, type: "restaurant", cuisine: "קפה" },
+    { id: 6, name: "מסעדת הגולן", lat: 32.98, lng: 35.68, type: "restaurant", cuisine: "בשרים" },
+    { id: 7, name: "מסעדת חיפה", lat: 32.73, lng: 35.00, type: "restaurant", cuisine: "ים תיכוני" },
+    { id: 8, name: "מזנון תל ברוך", lat: 32.13, lng: 34.79, type: "restaurant", cuisine: "חוף" },
+    { id: 9, name: "מסעדת ירושלים", lat: 31.78, lng: 35.12, type: "restaurant", cuisine: "מזרח תיכוני" },
+    { id: 10, name: "קפה פלמחים", lat: 31.93, lng: 34.71, type: "restaurant", cuisine: "קפה" },
+    { id: 11, name: "מסעדת החרמון", lat: 33.28, lng: 35.73, type: "restaurant", cuisine: "לבנוני" },
+    { id: 12, name: "קפה יהודיה", lat: 32.98, lng: 35.68, type: "restaurant", cuisine: "קפה" },
+  ],
+  food: [
+    { id: 1, name: "מכולת עין גדי", lat: 31.45, lng: 35.38, type: "food" },
+    { id: 2, name: "סופרמרקט - אילת", lat: 29.55, lng: 34.95, type: "food" },
+    { id: 3, name: "חנות מזון - קצרין", lat: 32.99, lng: 35.69, type: "food" },
+    { id: 4, name: "מכולת - רמון", lat: 30.61, lng: 34.80, type: "food" },
+    { id: 5, name: "מכולת - ירושלים", lat: 31.78, lng: 35.12, type: "food" },
+    { id: 6, name: "סופרמרקט - תל אביב", lat: 32.13, lng: 34.79, type: "food" },
+    { id: 7, name: "חנות מזון - חיפה", lat: 32.73, lng: 35.00, type: "food" },
+    { id: 8, name: "מכולת - מירון", lat: 32.99, lng: 35.41, type: "food" },
+  ]
+};
